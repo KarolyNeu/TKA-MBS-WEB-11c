@@ -1,0 +1,155 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    background: linear-gradient(to right bottom, #1675b4 10%, #50adc4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    height: 450px;
+    background-image: url(../../../img/Fortnite_Titelbild-640x360.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: center;
+        align-content: center;
+
+        li {
+            flex-basis: 1;
+            padding: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+
+            &:hover {
+                background-color: $viharhatter;
+                color: $viharbetuszin;
+                font-weight: bold;
+                font-size: 1.4rem;
+                text-decoration: none;
+            }
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+    h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding: 15px;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        font-size: 2.4rem;
+        text-align: center;
+        font-weight: bold;
+        color: #101010;
+        text-shadow: 2px 2px 3px gray;
+    }
+    h2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    div{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+#crossover{
+    height: 300px;
+    border-radius: 15px;
+    padding-left: auto;
+    padding-right: auto;
+
+}
+.tovabbi-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.tovabbi-list .item{
+    display: flex;
+    flex-direction:column;
+    background-color: $viharbetuszin;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 18px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1em;
+}
+.item .head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+h3{
+    margin: 0px;
+}
+.item a{
+    background-color: rgb(29,185,84);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 3em;
+    line-height: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-self: center;
+    justify-self: center;
+}
+ul{
+    flex-grow: 1;
+}
+.item{
+    flex-basis: 100%;
+}
+@media (min-width: 576px){
+    .item {flex-basis:300px;}
+}
+@media (min-width: 1200px){
+    .item {flex-basis:20%;}
+}
