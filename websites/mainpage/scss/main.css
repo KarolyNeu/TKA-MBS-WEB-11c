@@ -5,10 +5,29 @@
 
 body {
   font-family: "Gill Sans", "Gill Sans MT";
-  background: linear-gradient(to right bottom, #1675b4 5%, #50adc4);
+  background: linear-gradient(to right bottom, #1675b4, #50adc4);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 200%;
+  text-align: center;
+  color: gold;
+  text-shadow: black 2px;
+}
+
+h1 {
+  padding: 15px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-size: 250%;
+  text-align: center;
+  font-weight: bold;
+  color: #061528;
+  text-shadow: 2px 2px 3px #65a3ff;
 }
 
 nav {
@@ -21,22 +40,6 @@ nav {
   background-size: cover;
   top: 0;
   width: 100%;
-}
-nav h2 {
-  padding: 10px;
-  font-size: 1.4rem;
-  text-align: center;
-  color: #061528;
-}
-nav h1 {
-  padding: 15px;
-  margin-bottom: 4px;
-  margin-top: 4px;
-  font-size: 2.4rem;
-  text-align: center;
-  font-weight: bold;
-  color: #101010;
-  text-shadow: 2px 2px 3px #65a3ff;
 }
 nav ul {
   display: flex;
@@ -68,6 +71,135 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-.content {
+#tortenetes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+#tortenetes video {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  width: 200%;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-left: 0%;
+    width: 200%;
+  }
+}
+
+#kepes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+#kepes img {
+  padding: 15px;
+}
+#kepes #crossover1 {
+  display: block;
+  height: 350px;
+  width: 750px;
+}
+#kepes #crossover2 {
+  display: block;
+  height: 350px;
+  width: 750px;
+}
+#kepes #crossover3 {
+  display: block;
+  height: 350px;
+  width: 750px;
+}
+
+p {
+  size: 175%;
+  padding: 15px;
+  text-indent: 10px;
+  font-family: "Cambria";
+}
+
+.tovabbi-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.tovabbi-list .item {
+  display: flex;
+  flex-direction: column;
+  background-color: #59276c;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 18px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 1em;
+}
+
+.item .head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.item a {
+  background-color: rgb(29, 185, 84);
+  color: white;
+  font-weight: bold;
   text-align: center;
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 3em;
+  line-height: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  flex-grow: 1;
+}
+
+.item {
+  flex-basis: 100%;
+}
+
+footer {
+  text-align: center;
+  background-image: url(../../../img/footer.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+  background-position: center;
+}
+
+@media (min-width: 576px) {
+  .item {
+    flex-basis: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .item {
+    flex-basis: 20%;
+  }
 }/*# sourceMappingURL=main.css.map */
