@@ -49,12 +49,10 @@ nav ul {
   justify-content: center;
   align-content: center;
   list-style-type: none;
-  list-style-type: none;
   margin: 0;
   padding: 15px;
 }
 nav ul li {
-  display: inline;
   font-family: "Fira Sans", sans-serif;
   font-size: 17px;
 }
@@ -196,6 +194,13 @@ footer {
 @media (min-width: 576px) {
   .item {
     flex-basis: 300px;
+  }
+}
+@media (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+    align-content: space-around;
+    row-gap: 20px;
   }
 }
 @media (min-width: 1200px) {

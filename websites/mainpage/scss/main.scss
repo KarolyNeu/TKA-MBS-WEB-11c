@@ -47,11 +47,9 @@ nav {
     justify-content: center;
     align-content: center;
     list-style-type: none;
-    list-style-type: none;
     margin: 0;
     padding: 15px;
     li {
-      display: inline;
       font-family: "Fira Sans", sans-serif;
       font-size: 17px;
       a {
@@ -185,6 +183,11 @@ footer{
 }
 @media (min-width: 576px){
   .item {flex-basis:300px;}
+}
+@media (max-width: 576px){
+  nav ul {flex-direction: column;
+  align-content: space-around;
+row-gap: 20px;}
 }
 @media (min-width: 1200px){
   .item {flex-basis:20%;}
